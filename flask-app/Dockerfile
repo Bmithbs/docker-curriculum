@@ -1,12 +1,12 @@
 FROM python:3.8
 
-# set a directory for the app
-WORKDIR /usr/src/app
+# set a directory for the app，设置工作路径
+WORKDIR /usr/src/app 
 
 # copy all the files to the container
 COPY . .
 
-# install dependencies
+# install dependencies  
 RUN pip install --no-cache-dir -r requirements.txt
 
 # tell the port number the container should expose
